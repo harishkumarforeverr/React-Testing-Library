@@ -38,13 +38,7 @@ const Home = () => {
   const fetchData = async () => {
     setLoading(true);
     setError(null);
-    try {
-      setTimeout(() => {
-        setData(response.data.title);
-      }, 2000);
-    } catch (error) {
-      setError("Error fetching data");
-    }
+    setData("okay");
     setLoading(false);
   };
 
@@ -54,10 +48,12 @@ const Home = () => {
       <p>{message}</p>
       <button onClick={handleClick}>Click me!</button>
       <p>{handleSwitch(count)}</p>
-      <button onClick={fetchData}>Fetch Data</button>
+      <button aria-label="fetchData" onClick={fetchData}>
+        Fetch Data
+      </button>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
+      {data && <pre>{data}</pre>}
     </div>
   );
 };
