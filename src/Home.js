@@ -1,19 +1,13 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Home = () => {
-  // useState
-  const NameConstant="HARISH"
+  const NameConstant = "HARISH";
   const [count, setCount] = useState(0);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Constants
-  const API_URL = "https://jsonplaceholder.typicode.com/posts/1";
-
-  // if else
   let message;
   if (count === 0) {
     message = "Click the button to start!";
@@ -45,9 +39,9 @@ const Home = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(API_URL);
-      console.log("response", response);
-      setData(response.data.title);
+      setTimeout(() => {
+        setData(response.data.title);
+      }, 2000);
     } catch (error) {
       setError("Error fetching data");
     }
@@ -68,5 +62,4 @@ const Home = () => {
   );
 };
 
-
-export default Home
+export default Home;
