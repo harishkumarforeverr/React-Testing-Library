@@ -19,7 +19,6 @@ const MultipleUseStateMocking = () => {
 
   // switch
   const handleSwitch = (value) => {
-    console.log("im clicked",value)
     switch (value) {
       case 1:
         return "Value is 1";

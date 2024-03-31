@@ -102,5 +102,5 @@ describe("Home component -3 ", () => {
 
   it("Is a test where we want to mock useState", () => {
     render(<Home />);
-  });
+  }); 
 });

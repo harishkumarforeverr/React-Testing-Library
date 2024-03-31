@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import MultipleUseStateMocking from "./MultipleUseStateMocking/MultipleUseStateMocking";
+import MockingCustomHooks from "./MockingCustomHooks/MockingCustomHooks";
 
 // Component for Home page
 
@@ -33,6 +34,10 @@ const App = () => {
           <Route
             path="/MultipleUseStateMocking"
             element={<MultipleUseStateMocking />}
+          />
+          <Route
+            path="/MockingCustomHooks"
+            element={<MockingCustomHooks />}
           />
         </Routes>
       </div>
