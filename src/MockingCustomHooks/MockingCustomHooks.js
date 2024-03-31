@@ -3,7 +3,6 @@ import useMockingCustomHooks from "./useMockingCustomHooks/useMockingCustomHooks
 
 const MockingCustomHooks = () => {
   const [count, setCount] = useMockingCustomHooks(0);
-  console.log("countcount", count);
   if (count == 0) {
     return <h1>Count : 0</h1>;
   }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import MultipleUseStateMocking from "./MultipleUseStateMocking/MultipleUseStateMocking";
 import MockingCustomHooks from "./MockingCustomHooks/MockingCustomHooks";
+import TryCatchBlock from "./Try Catch Block/TryCatchBlock";
 
 // Component for Home page
 
@@ -38,6 +39,10 @@ const App = () => {
           <Route
             path="/MockingCustomHooks"
             element={<MockingCustomHooks />}
+          />
+          <Route
+            path="/TryCatchBlock"
+            element={<TryCatchBlock />}
           />
         </Routes>
       </div>
