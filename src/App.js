@@ -1,27 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import axios from "axios";
-import Home from "./Home"; 
+import Home from "./Home";
+import MultipleUseStateMocking from "./MultipleUseStateMocking/MultipleUseStateMocking";
 
 // Component for Home page
-
-
-
-// Component for About page
-const About = () => (
-  <div>
-    <h2>About Us</h2>
-    <p>This is the About page.</p>
-  </div>
-);
-
-// Component for Contact page
-const Contact = () => (
-  <div>
-    <h2>Contact Us</h2>
-    <p>This is the Contact page.</p>
-  </div>
-);
 
 // Main App component
 const App = () => {
@@ -39,14 +21,19 @@ const App = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/MultipleUseStateMocking">MultipleUseStateMocking</Link>
+            </li>
           </ul>
         </nav>
 
         {/* Define routes using Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/MultipleUseStateMocking"
+            element={<MultipleUseStateMocking />}
+          />
         </Routes>
       </div>
     </Router>
