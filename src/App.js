@@ -4,6 +4,7 @@ import Home from "./Home";
 import MultipleUseStateMocking from "./MultipleUseStateMocking/MultipleUseStateMocking";
 import MockingCustomHooks from "./MockingCustomHooks/MockingCustomHooks";
 import TryCatchBlock from "./Try Catch Block/TryCatchBlock";
+import WindowObjectInRender from "./WindowObjectInRender/windowObjectInRender";
 
 // Component for Home page
 
@@ -43,6 +44,10 @@ const App = () => {
           <Route
             path="/TryCatchBlock"
             element={<TryCatchBlock />}
+          />
+          <Route
+            path="/WindowObjectInRender"
+            element={<WindowObjectInRender />}
           />
         </Routes>
       </div>
