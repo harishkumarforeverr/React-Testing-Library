@@ -5,6 +5,7 @@ import MultipleUseStateMocking from "./MultipleUseStateMocking/MultipleUseStateM
 import MockingCustomHooks from "./MockingCustomHooks/MockingCustomHooks";
 import TryCatchBlock from "./Try Catch Block/TryCatchBlock";
 import WindowObjectInRender from "./WindowObjectInRender/windowObjectInRender";
+import ParenthandleChangeFromChildComp from "./handleChangeFromChildComp/ParenthandleChangeFromChildComp";
 
 // Component for Home page
 
@@ -48,6 +49,10 @@ const App = () => {
           <Route
             path="/WindowObjectInRender"
             element={<WindowObjectInRender />}
+          />
+          <Route
+            path="/ParenthandleChangeFromChildComp"
+            element={<ParenthandleChangeFromChildComp />}
           />
         </Routes>
       </div>
